@@ -1,0 +1,26 @@
+{
+  "name": "slurp-some",
+  "version": "1.0.0",
+  "description": "Slurp nodejs stream to a string some predefined amount",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lakowske/slurp-some.git"
+  },
+  "keywords": [
+    "Slurp",
+    "stream",
+    "string",
+    "amount",
+    "bytes"
+  ],
+  "author": "Seth Lakowske",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/lakowske/slurp-some/issues"
+  },
+  "homepage": "https://github.com/lakowske/slurp-some"
+}
