@@ -2,7 +2,7 @@
  * (C) 2015 Seth Lakowske
  */
 
-function slurp(stream, max_amount, onEnd, onError) {
+function slurp(stream, max_amount, callback) {
 
     var content = '';
 
@@ -10,17 +10,15 @@ function slurp(stream, max_amount, onEnd, onError) {
         content += data;
 
         if (content.length > max_amount) {
-            if (onError) {
-                onError('max amount exceeded', max_amount, content);
-            } else {
-                onEnd(content);
-            }
+            callback('max amount exceeded', content);
         }
         
-    })
+    });
 
     stream.on('end', function() {
-        onEnd(content);
+        callback(null, content);
     });
     
 }
+
+module.exports.slurp = slurp;
