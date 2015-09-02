@@ -1,5 +1,5 @@
 # slurp-some
-Slurp stream to a string some predefined amount
+Slurp some of a stream to a string.  Inspired by clojure's slurp.
 
 # example
 ``` js
