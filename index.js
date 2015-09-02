@@ -7,7 +7,7 @@ function slurp(stream, max_amount, callback) {
     var content = '';
 
     stream.on('data', function(data) {
-        content += data;
+        content += data.toString('utf8');
 
         if (content.length > max_amount) {
             callback('max amount exceeded', content);
