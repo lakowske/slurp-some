@@ -1,6 +1,6 @@
 {
   "name": "slurp-some",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Slurp nodejs stream to a string some predefined amount",
   "main": "index.js",
   "scripts": {
