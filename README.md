@@ -18,7 +18,7 @@ slurp(input, 2048, function(err, content) {
 output:
 
 ```
-my file content
+my stream content
 ```
 
 
